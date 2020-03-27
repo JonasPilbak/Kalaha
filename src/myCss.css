@@ -3,9 +3,16 @@
     -fx-background-radius: 30 ;
 
 }
+.p1buttons:hover{
+    -fx-cursor: hand;
+    -fx-fill: black;
+}
 
 .p2buttons{
     -fx-background-color: linear-gradient(#49a5ff, #be92be);
     -fx-background-radius: 30 ;
-
+}
+.p2buttons:hover {
+    -fx-cursor: hand;
+    -fx-fill: black;
 }
