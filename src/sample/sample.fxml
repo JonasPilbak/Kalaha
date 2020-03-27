@@ -26,25 +26,25 @@
                </font>
             </Text>
             <Button fx:id="newGameButton" layoutX="28.0" layoutY="52.0" mnemonicParsing="false" text="New Game" />
-            <Button fx:id="pit12" layoutX="121.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit11" layoutX="255.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit10" layoutX="383.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit9" layoutX="516.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit8" layoutX="652.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit7" layoutX="784.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit1" layoutX="126.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit2" layoutX="260.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit3" layoutX="388.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit4" layoutX="521.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit5" layoutX="657.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
-            <Button fx:id="pit6" layoutX="789.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" />
+            <Button fx:id="pit12" alignment="CENTER" layoutX="121.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit11" alignment="CENTER" layoutX="255.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit10" alignment="CENTER" layoutX="383.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit9" alignment="CENTER" layoutX="516.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit8" alignment="CENTER" layoutX="652.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit7" alignment="CENTER" layoutX="784.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit1" contentDisplay="CENTER" layoutX="126.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit2" contentDisplay="CENTER" layoutX="260.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit3" alignment="CENTER" layoutX="388.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit4" alignment="CENTER" layoutX="521.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit5" alignment="CENTER" layoutX="657.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit6" alignment="CENTER" layoutX="789.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
             <TextField fx:id="playerTurn" alignment="CENTER" layoutX="423.0" layoutY="258.0" text="Player's Turn" />
             <TextField fx:id="p1Score" alignment="CENTER" layoutX="180.0" layoutY="68.0" text="P1 Score:" />
             <TextField fx:id="p2Score" alignment="CENTER" layoutX="691.0" layoutY="68.0" text="P2 Score:" />
             <Button fx:id="rulesButton" layoutX="770.0" layoutY="483.0" mnemonicParsing="false" text="Rules" />
             <Button fx:id="closeButton" layoutX="878.0" layoutY="483.0" mnemonicParsing="false" text="Close" />
-            <Button fx:id="P2House" layoutX="36.0" layoutY="199.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="118.0" />
-            <Button fx:id="P1House" layoutX="860.0" layoutY="199.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="118.0" />
+            <Button fx:id="P2House" alignment="CENTER" layoutX="36.0" layoutY="199.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="P1House" alignment="CENTER" layoutX="860.0" layoutY="199.0" mnemonicParsing="false" prefHeight="156.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
          </children>
       </AnchorPane>
    </children>

@@ -1,0 +1,11 @@
+.p1buttons{
+    -fx-background-color: linear-gradient(#ff5400, #be7c4a);
+    -fx-background-radius: 30 ;
+
+}
+
+.p2buttons{
+    -fx-background-color: linear-gradient(#49a5ff, #be92be);
+    -fx-background-radius: 30 ;
+
+}
