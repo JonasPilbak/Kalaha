@@ -17,7 +17,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="546.0" prefWidth="1079.0" style="-fx-background-radius: 50;">
+      <AnchorPane prefHeight="546.0" prefWidth="1079.0" styleClass="mainBord" stylesheets="@../myCss.css">
          <children>
             <Text fill="#2718cd" layoutX="480.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KALAHA" textAlignment="CENTER">
                <font>

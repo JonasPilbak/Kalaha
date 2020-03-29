@@ -25,3 +25,7 @@
     -fx-cursor: hand;
     -fx-background-color: #e3f394;
 }
+.mainBord{
+    -fx-background-color: linear-gradient(#faffeb, #d6f8ff);
+
+}
