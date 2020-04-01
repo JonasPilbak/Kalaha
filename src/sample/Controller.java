@@ -74,8 +74,9 @@ public class Controller {
 
     public void restart(ActionEvent actionEvent) throws IOException {
 
-        cleanup();
         startGame();
+        cleanup();
+
 
     }
 }
