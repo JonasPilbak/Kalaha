@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.LinkedList;
 
 public class Controller {
 
@@ -33,7 +34,14 @@ public class Controller {
     @FXML
     private Label p1Score;
 
+    @FXML
+    private LinkedList<Integer> list = new LinkedList<>();
+
     Stage stage;
+
+
+
+
 
 
 
@@ -56,6 +64,46 @@ public class Controller {
 
 
 
+    @FXML
+    public void test()
+    {
+        Pits pit = new Pits(6);
+        Pits pit2 = new Pits(6);
+        Pits pit3 = new Pits(6);
+        Pits pit4 = new Pits(6);
+        Pits pit5 = new Pits(6);
+        Pits pit6 = new Pits(6);
+        Pits pit7 = new Pits(6);
+        Pits pit8 = new Pits(6);
+        Pits pit9 = new Pits(6);
+        Pits pit10 = new Pits(6);
+        Pits pit11 = new Pits(6);
+        Pits pit12 = new Pits(6);
+
+        pit.nextPits = pit2;
+        pit2.nextPits = pit3;
+        pit3.nextPits = pit4;
+        pit4.nextPits = pit5;
+        pit5.nextPits = pit6;
+        pit6.nextPits = pit7;
+        pit7.nextPits = pit8;
+        pit8.nextPits = pit9;
+        pit9.nextPits = pit10;
+        pit10.nextPits = pit11;
+        pit11.nextPits = pit12;
+        pit12.nextPits = pit;
+
+
+
+
+
+
+
+
+
+
+
+    }
 
     @FXML
     void cleanup() throws IOException {

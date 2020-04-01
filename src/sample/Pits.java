@@ -8,40 +8,40 @@ import java.util.LinkedList;
 public class Pits {
 
     @FXML
-    private Button pit12;
+    public Button pit12;
 
     @FXML
-    private Button pit11;
+    public Button pit11;
 
     @FXML
-    private Button pit10;
+    public Button pit10;
 
     @FXML
-    private Button pit9;
+    public Button pit9;
 
     @FXML
-    private Button pit8;
+    public Button pit8;
 
     @FXML
-    private Button pit7;
+    public Button pit7;
 
     @FXML
-    private Button pit1;
+    public Button pit1;
 
     @FXML
-    private Button pit2;
+    public Button pit2;
 
     @FXML
-    private Button pit3;
+    public Button pit3;
 
     @FXML
-    private Button pit4;
+    public Button pit4;
 
     @FXML
-    private Button pit5;
+    public Button pit5;
 
     @FXML
-    private Button pit6;
+    public Button pit6;
 
     int value;
     Pits nextPits;
@@ -50,6 +50,8 @@ public class Pits {
         this.value = value;
     }
 
+
+    
 
 
 
