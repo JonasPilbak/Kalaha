@@ -5,8 +5,8 @@ import java.util.logging.Logger;
 import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 
 public class CircularLinkedLIst {
-    private Pits head = null;
-    private Pits tail = null;
+    public Pits head = null;
+    public Pits tail = null;
 
     public void addStonesToPit(int value) {
         Pits newPit = new Pits(value);
@@ -21,7 +21,7 @@ public class CircularLinkedLIst {
         tail.nextPits = head;
     }
 
-    private CircularLinkedLIst createCircle() {
+    public CircularLinkedLIst createCircle() {
         CircularLinkedLIst circleList = new CircularLinkedLIst();
 
         circleList.addStonesToPit(6);
