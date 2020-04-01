@@ -63,10 +63,11 @@ public class Controller {
     }
 
 
-
+    /**
+     * Created the LinkedList
+     */
     @FXML
-    public void test()
-    {
+    public void test() {
         Pits pit = new Pits(6);
         Pits pit2 = new Pits(6);
         Pits pit3 = new Pits(6);
@@ -92,14 +93,6 @@ public class Controller {
         pit10.nextPits = pit11;
         pit11.nextPits = pit12;
         pit12.nextPits = pit;
-
-
-
-
-
-
-
-
 
 
 

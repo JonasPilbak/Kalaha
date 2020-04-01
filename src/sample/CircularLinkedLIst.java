@@ -45,7 +45,7 @@ public class CircularLinkedLIst {
         Pits currentPit = head;
 
         if (head != null) {
-            if (currentPit.value == valueToDelete) {
+            if (valueToDelete == currentPit.value) {
                 head = head.nextPits;
                 tail.nextPits = head;
             } else {
