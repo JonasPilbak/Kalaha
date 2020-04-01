@@ -46,36 +46,59 @@ public class Controller {
     public void close(){
         closeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event) {
+            public void handle(ActionEvent event)
+            {
+
                 System.exit(-1);
             }
         });
     }
 
 
+
+
     @FXML
     void cleanup() throws IOException {
         //This is only Pseudo-Idea Collection
-        p2Score.setText("0");
-        p1Score.setText("0");
-        playerTurn.setText("P1");
-        stage.close();
+
+        try {
+
+            p2Score.setText("0");
+            p1Score.setText("0");
+            playerTurn.setText("P1");
+            stage.close();
+        }catch (NullPointerException e)
+        {
+            System.out.println();
+        }
+
     }
 
     @FXML
     void startGame() throws IOException {
-        Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        stage.setTitle("KALAHA");
-        stage.setScene(new Scene(root, 1100, 700));
+
+        if (stage == null) {
+            Stage stage = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+            stage.setTitle("KALAHA");
+            stage.setScene(new Scene(root, 1100, 700));
+            stage.show();
+        }
+        else if (stage.isShowing())
+        {
+    stage.toFront();
+        }
+    else
+    {
         stage.show();
+    }
     }
 
 
     public void restart(ActionEvent actionEvent) throws IOException {
 
         cleanup();
-        startGame();
+       // startGame();
 
     }
 }
