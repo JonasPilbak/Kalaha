@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -40,22 +41,12 @@ public class Controller {
     Stage stage;
 
 
-
-
-
-
-
-
-
-
-
     //For security reasons added @FXML , correct me if I'm wrong.
     @FXML
-    public void close(){
+    public void close() {
         closeButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event)
-            {
+            public void handle(ActionEvent event) {
 
                 System.exit(-1);
             }
@@ -69,78 +60,79 @@ public class Controller {
     @FXML
     public void test() {
         Pits pit = new Pits(6);
-        Pits pit2 = new Pits(6);
-        Pits pit3 = new Pits(6);
-        Pits pit4 = new Pits(6);
-        Pits pit5 = new Pits(6);
-        Pits pit6 = new Pits(6);
-        Pits pit7 = new Pits(6);
-        Pits pit8 = new Pits(6);
-        Pits pit9 = new Pits(6);
-        Pits pit10 = new Pits(6);
-        Pits pit11 = new Pits(6);
-        Pits pit12 = new Pits(6);
-
-        pit.nextPits = pit2;
-        pit2.nextPits = pit3;
-        pit3.nextPits = pit4;
-        pit4.nextPits = pit5;
-        pit5.nextPits = pit6;
-        pit6.nextPits = pit7;
-        pit7.nextPits = pit8;
-        pit8.nextPits = pit9;
-        pit9.nextPits = pit10;
-        pit10.nextPits = pit11;
-        pit11.nextPits = pit12;
-        pit12.nextPits = pit;
-
-
-
     }
 
-    @FXML
-    void cleanup() throws IOException {
-        //This is only Pseudo-Idea Collection
-
-        try {
-
-            p2Score.setText("0");
-            p1Score.setText("0");
-            playerTurn.setText("P1");
-            stage.close();
-        }catch (NullPointerException e)
+        public void test ()
         {
-            System.out.println();
+            Pits head = new Pits(6);
+            Pits pit2 = new Pits(6);
+            Pits pit3 = new Pits(6);
+            Pits pit4 = new Pits(6);
+            Pits pit5 = new Pits(6);
+            Pits pit6 = new Pits(6);
+            Pits pit7 = new Pits(6);
+            Pits pit8 = new Pits(6);
+            Pits pit9 = new Pits(6);
+            Pits pit10 = new Pits(6);
+            Pits pit11 = new Pits(6);
+            Pits pit12 = new Pits(6);
+
+
+            head.nextPits = pit2;
+            pit2.nextPits = pit3;
+            pit3.nextPits = pit4;
+            pit4.nextPits = pit5;
+            pit5.nextPits = pit6;
+            pit6.nextPits = pit7;
+            pit7.nextPits = pit8;
+            pit8.nextPits = pit9;
+            pit9.nextPits = pit10;
+            pit10.nextPits = pit11;
+            pit11.nextPits = pit12;
+            pit12.nextPits = head;
+            head.pit12.setStyle("-fx-background-color: RED");
+
         }
 
-    }
+        @FXML
+        void cleanup() throws IOException {
+            //This is only Pseudo-Idea Collection
 
-    @FXML
-    void startGame() throws IOException {
+            try {
 
-        if (stage == null) {
-            Stage stage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-            stage.setTitle("KALAHA");
-            stage.setScene(new Scene(root, 1100, 700));
-            stage.show();
+                p2Score.setText("0");
+                p1Score.setText("0");
+                playerTurn.setText("P1");
+                stage.close();
+            } catch (NullPointerException e) {
+                System.out.println();
+            }
+
         }
-        else if (stage.isShowing())
-        {
-    stage.toFront();
+
+        @FXML
+        void startGame() throws IOException {
+
+            if (stage == null) {
+                Stage stage = new Stage();
+                Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+                stage.setTitle("KALAHA");
+                stage.setScene(new Scene(root, 1100, 700));
+                stage.show();
+            } else if (stage.isShowing()) {
+                stage.toFront();
+            } else {
+                stage.show();
+            }
         }
-    else
-    {
-        stage.show();
-    }
-    }
 
 
-    public void restart(ActionEvent actionEvent) throws IOException {
-        cleanup();
-       // startGame();
+        public void restart (ActionEvent actionEvent) throws IOException {
+            cleanup();
+            // startGame();
 
 
-    }
+        }
 }
+
 
