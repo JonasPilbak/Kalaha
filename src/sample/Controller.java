@@ -33,6 +33,8 @@ public class Controller {
     @FXML
     private Label p1Score;
 
+    Stage stage;
+
 
 
 
@@ -57,6 +59,7 @@ public class Controller {
         p2Score.setText("0");
         p1Score.setText("0");
         playerTurn.setText("P1");
+        stage.close();
     }
 
     @FXML
