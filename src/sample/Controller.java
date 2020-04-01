@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -67,7 +68,7 @@ public class Controller {
     @FXML
     public void test()
     {
-        Pits pit = new Pits(6);
+        Pits head = new Pits(6);
         Pits pit2 = new Pits(6);
         Pits pit3 = new Pits(6);
         Pits pit4 = new Pits(6);
@@ -80,7 +81,9 @@ public class Controller {
         Pits pit11 = new Pits(6);
         Pits pit12 = new Pits(6);
 
-        pit.nextPits = pit2;
+
+
+        head.nextPits = pit2;
         pit2.nextPits = pit3;
         pit3.nextPits = pit4;
         pit4.nextPits = pit5;
@@ -91,11 +94,11 @@ public class Controller {
         pit9.nextPits = pit10;
         pit10.nextPits = pit11;
         pit11.nextPits = pit12;
-        pit12.nextPits = pit;
+        pit12.nextPits = head;
 
 
 
-
+   head.pit12.setStyle("-fx-background-color: RED");
 
 
 
