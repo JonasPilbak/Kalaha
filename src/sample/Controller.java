@@ -95,6 +95,8 @@ public class Controller {
         pit10.nextPits = pit11;
         pit11.nextPits = pit12;
         pit12.nextPits = head;
+        pit12 = head;
+
 
 
 
