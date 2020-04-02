@@ -53,15 +53,6 @@ public class Controller {
         });
     }
 
-
-    /**
-     * Created the LinkedList
-     */
-    @FXML
-    public void test() {
-        Pits pit = new Pits(6);
-    }
-
         public void test ()
         {
             Pits head = new Pits(6);
