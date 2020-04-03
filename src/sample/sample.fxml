@@ -25,11 +25,14 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Text>
-            <Button fx:id="newGameButton" layoutX="28.0" layoutY="52.0" mnemonicParsing="false" onAction="#restart" styleClass="otherButtons" stylesheets="@../myCss.css" text="New Game" />
-            <Button fx:id="pit12" alignment="CENTER" layoutX="131.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="newGameButton" layoutX="124.0" layoutY="52.0" mnemonicParsing="false" onAction="#restart" styleClass="otherButtons" stylesheets="@../myCss.css" text="New Game" />
+            <Button fx:id="pit12" alignment="CENTER" layoutX="121.0" layoutY="114.0" mnemonicParsing="false" onAction="#test" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
             <Button fx:id="pit11" alignment="CENTER" layoutX="255.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
             <Button fx:id="pit10" alignment="CENTER" layoutX="383.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
-            <Button fx:id="pit9" alignment="CENTER" layoutX="516.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
+            <Button fx:id="pit9" alignment="CENTER" layoutX="516.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
             <Button fx:id="pit8" alignment="CENTER" layoutX="652.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
             <Button fx:id="pit7" alignment="CENTER" layoutX="784.0" layoutY="114.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p2buttons" stylesheets="@../myCss.css" />
             <Button fx:id="pit1" contentDisplay="CENTER" layoutX="126.0" layoutY="366.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="118.0" styleClass="p1buttons" stylesheets="@../myCss.css" />
@@ -60,20 +63,60 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <TextField fx:id="tfPit7" layoutX="821.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit8" layoutX="688.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit9" layoutX="552.0" layoutY="136.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit10" layoutX="420.0" layoutY="136.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit11" layoutX="292.0" layoutY="138.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit4" layoutX="558.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit6" layoutX="826.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfHouseP1" layoutX="897.0" layoutY="265.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfHouseP2" layoutX="73.0" layoutY="265.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit12" layoutX="158.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit5" layoutX="694.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit3" layoutX="425.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit2" layoutX="297.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
-            <TextField fx:id="tfPit1" layoutX="163.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit7" alignment="CENTER" layoutX="812.0" layoutY="130.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit8" alignment="CENTER" layoutX="682.0" layoutY="132.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit9" alignment="CENTER" layoutX="543.0" layoutY="134.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit" />
+            <TextField fx:id="tfPit10" alignment="CENTER" layoutX="411.0" layoutY="129.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit11" alignment="CENTER" layoutX="282.0" layoutY="131.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit4" alignment="CENTER" layoutX="549.0" layoutY="384.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit6" alignment="CENTER" layoutX="817.0" layoutY="382.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfHouseP1" alignment="CENTER" layoutX="888.0" layoutY="241.0" prefHeight="74.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfHouseP2" alignment="CENTER" layoutX="64.0" layoutY="243.0" prefHeight="74.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit12" alignment="CENTER" layoutX="146.0" layoutY="133.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit5" alignment="CENTER" layoutX="685.0" layoutY="384.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit3" alignment="CENTER" layoutX="416.0" layoutY="384.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit2" alignment="CENTER" layoutX="288.0" layoutY="383.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="tfPit1" alignment="CENTER" layoutX="154.0" layoutY="383.0" prefHeight="12.0" prefWidth="60.0" styleClass="tfPit">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Button fx:id="startGameButton" layoutX="36.0" layoutY="52.0" mnemonicParsing="false" onAction="#buttonNames" styleClass="otherButtons" stylesheets="@../myCss.css" text="START GAME" />
          </children>
       </AnchorPane>
    </children>

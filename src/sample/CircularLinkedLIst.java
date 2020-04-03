@@ -13,12 +13,14 @@ public class CircularLinkedLIst {
 
         if (head == null) {
             head = newPit;
+            tail=newPit;
+            newPit.nextPits = head;
         } else {
             tail.nextPits = newPit;
+            tail = newPit;
+            tail.nextPits = head;
         }
 
-        tail = newPit;
-        tail.nextPits = head;
     }
 
     public CircularLinkedLIst createCircle() {
