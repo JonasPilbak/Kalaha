@@ -29,4 +29,6 @@
     -fx-background-color: linear-gradient(#faffeb, #d6f8ff);
 
 }
-
+.tfPit {
+    -fx-background-radius: 100 ;
+}
