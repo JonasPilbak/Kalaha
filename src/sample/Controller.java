@@ -13,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.temporal.ValueRange;
 import java.util.LinkedList;
 
 public class Controller {
@@ -123,18 +124,21 @@ public class Controller {
     public void buttonNames()
     {
 
-        tfPit1.setPromptText("" + value);
-        tfPit2.setPromptText("" + value);
-        tfPit3.setPromptText("" + value);
-        tfPit4.setPromptText("" + value);
-        tfPit5.setPromptText("" + value);
-        tfPit6.setPromptText("" + value);
-        tfPit7.setPromptText("" + value);
-        tfPit8.setPromptText("" + value);
-        tfPit9.setPromptText("" + value);
-        tfPit10.setPromptText("" + value);
-        tfPit11.setPromptText("" + value);
-        tfPit12.setPromptText("" + value);
+        tfPit1.textProperty().setValue(""+value);
+        tfPit2.textProperty().setValue(""+value);
+        tfPit3.textProperty().setValue(""+value);
+        tfPit4.textProperty().setValue(""+value);
+        tfPit5.textProperty().setValue(""+value);
+        tfPit6.textProperty().setValue(""+value);
+        tfPit7.textProperty().setValue(""+value);
+        tfPit8.textProperty().setValue(""+value);
+        tfPit9.textProperty().setValue(""+value);
+        tfPit10.textProperty().setValue(""+value);
+        tfPit11.textProperty().setValue(""+value);
+        tfPit12.textProperty().setValue(""+value);
+       tfHouseP1.textProperty().setValue("" + startValue);
+       tfHouseP2.textProperty().setValue("" + startValue);
+
 
     }
 
