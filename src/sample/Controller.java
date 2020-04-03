@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -15,6 +16,83 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 public class Controller {
+    @FXML
+    public Button pit12;
+
+    @FXML
+    public Button pit11;
+
+    @FXML
+    public Button pit10;
+
+    @FXML
+    public Button pit9;
+
+    @FXML
+    public Button pit8;
+
+    @FXML
+    public Button pit7;
+
+    @FXML
+    public Button pit1;
+
+    @FXML
+    public Button pit2;
+
+    @FXML
+    public Button pit3;
+
+    @FXML
+    public Button pit4;
+
+    @FXML
+    public Button pit5;
+
+    @FXML
+    public Button pit6;
+
+    @FXML
+    private TextField tfPit7;
+
+    @FXML
+    private TextField tfPit8;
+
+    @FXML
+    private TextField tfPit9;
+
+    @FXML
+    private TextField tfPit10;
+
+    @FXML
+    private TextField tfPit11;
+
+    @FXML
+    private TextField tfPit4;
+
+    @FXML
+    private TextField tfPit6;
+
+    @FXML
+    private TextField tfHouseP1;
+
+    @FXML
+    private TextField tfHouseP2;
+
+    @FXML
+    private TextField tfPit12;
+
+    @FXML
+    private TextField tfPit5;
+
+    @FXML
+    private TextField tfPit3;
+
+    @FXML
+    private TextField tfPit2;
+
+    @FXML
+    private TextField tfPit1;
 
     @FXML
     public Button newGameButton;
@@ -39,6 +117,26 @@ public class Controller {
     private LinkedList<Integer> list = new LinkedList<>();
 
     Stage stage;
+    int value = 6;
+    int startValue = 0;
+
+    public void buttonNames()
+    {
+
+        tfPit1.setPromptText("" + value);
+        tfPit2.setPromptText("" + value);
+        tfPit3.setPromptText("" + value);
+        tfPit4.setPromptText("" + value);
+        tfPit5.setPromptText("" + value);
+        tfPit6.setPromptText("" + value);
+        tfPit7.setPromptText("" + value);
+        tfPit8.setPromptText("" + value);
+        tfPit9.setPromptText("" + value);
+        tfPit10.setPromptText("" + value);
+        tfPit11.setPromptText("" + value);
+        tfPit12.setPromptText("" + value);
+
+    }
 
 
     //For security reasons added @FXML , correct me if I'm wrong.
@@ -52,6 +150,8 @@ public class Controller {
             }
         });
     }
+
+
 
         public void test ()
         {
@@ -82,6 +182,8 @@ public class Controller {
             pit11.nextPits = pit12;
             pit12.nextPits = head;
 
+
+
         }
 
         @FXML
@@ -95,7 +197,7 @@ public class Controller {
                 playerTurn.setText("P1");
                 stage.close();
             } catch (NullPointerException e) {
-                System.out.println();
+                System.out.println("NUllPointer");
             }
 
         }
