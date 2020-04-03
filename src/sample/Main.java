@@ -18,7 +18,7 @@ public class Main extends Application {
         try {
 
             c.startGame();
-            c.test();
+            //c.test();
             
         } catch (IOException e) {
             e.printStackTrace();

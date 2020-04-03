@@ -89,8 +89,6 @@ public class Pits {
     int value = 6;
 
     Pits nextPits;
-
-    private IntegerProperty noofSeed = new SimpleIntegerProperty();
     CircularLinkedLIst cll = new CircularLinkedLIst();
 
     public Pits(int value){

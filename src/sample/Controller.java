@@ -150,7 +150,11 @@ public class Controller {
         });
     }
 
-    public void test() {
+
+
+    @FXML
+    public void test()
+    {
         Pits head = new Pits(6);
         Pits pit2 = new Pits(6);
         Pits pit3 = new Pits(6);
@@ -165,6 +169,7 @@ public class Controller {
         Pits pit12 = new Pits(6);
 
 
+
         head.nextPits = pit2;
         pit2.nextPits = pit3;
         pit3.nextPits = pit4;
@@ -177,49 +182,54 @@ public class Controller {
         pit10.nextPits = pit11;
         pit11.nextPits = pit12;
         pit12.nextPits = head;
+        pit12 = head;
 
-    }
 
-    @FXML
-    void cleanup() throws IOException {
-        //This is only Pseudo-Idea Collection
 
-        try {
 
-            p2Score.setText("0");
-            p1Score.setText("0");
-            playerTurn.setText("P1");
-            stage.close();
-        } catch (NullPointerException e) {
-            System.out.println();
+   head.pit12.setStyle("-fx-background-color: RED");
+
         }
 
-    }
+        @FXML
+        void cleanup() throws IOException {
+            //This is only Pseudo-Idea Collection
 
-    @FXML
-    void startGame() throws IOException {
+            try {
 
-        if (stage == null) {
-            Stage stage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-            stage.setTitle("KALAHA");
-            stage.setScene(new Scene(root, 1100, 700));
-            stage.show();
-        } else if (stage.isShowing()) {
-            stage.toFront();
-        } else {
-            stage.show();
+                p2Score.setText("0");
+                p1Score.setText("0");
+                playerTurn.setText("P1");
+                stage.close();
+            } catch (NullPointerException e) {
+                System.out.println();
+            }
+
         }
-    }
+
+        @FXML
+        void startGame() throws IOException {
+
+            if (stage == null) {
+                Stage stage = new Stage();
+                Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+                stage.setTitle("KALAHA");
+                stage.setScene(new Scene(root, 1100, 700));
+                stage.show();
+            } else if (stage.isShowing()) {
+                stage.toFront();
+            } else {
+                stage.show();
+            }
+        }
 
 
-    public void restart(ActionEvent actionEvent) throws IOException {
-        cleanup();
-        // startGame();
+        public void restart (ActionEvent actionEvent) throws IOException {
+            cleanup();
+            // startGame();
 
 
-    }
-
+        }
 }
 
 
