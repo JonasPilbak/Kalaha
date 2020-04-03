@@ -68,6 +68,7 @@ public class CircularLinkedLIst {
 
         if(head!= null){
             do{
+
                 currentPit = currentPit.nextPits;
             }while(currentPit != head);
         }
