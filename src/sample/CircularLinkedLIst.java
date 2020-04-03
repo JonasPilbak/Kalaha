@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.scene.Node;
+
 import java.util.logging.Logger;
 
 import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
@@ -8,17 +10,17 @@ public class CircularLinkedLIst {
     public Pits head = null;
     public Pits tail = null;
 
-    public void addStonesToPit(int value) {
-        Pits newPit = new Pits(value);
+    public void addStonesToPit(int data) {
+        Pits newPit = new Pits(data);
 
         if (head == null) {
             head = newPit;
             tail=newPit;
-            newPit.nextPits = head;
+            newPit.next = head;
         } else {
-            tail.nextPits = newPit;
+            tail.next = newPit;
             tail = newPit;
-            tail.nextPits = head;
+            tail.next = head;
         }
 
     }
@@ -43,21 +45,21 @@ public class CircularLinkedLIst {
     }
 
 
-    public void deleteStonesFromPit(int valueToDelete) {
+    public void deleteStonesFromPit(int dataToDelete) {
         Pits currentPit = head;
 
         if (head != null) {
-            if (valueToDelete == currentPit.value) {
-                head = head.nextPits;
-                tail.nextPits = head;
+            if (dataToDelete == currentPit.data) {
+                head = head.next;
+                tail.next = head;
             } else {
                 do {
-                    Pits nextPits = currentPit.nextPits;
-                    if (nextPits.value == valueToDelete) {
-                        currentPit.nextPits = nextPits.nextPits;
+                    Pits next = currentPit.next;
+                    if (next.data == dataToDelete) {
+                        currentPit.next = next.next;
                         break;
                     }
-                    currentPit = currentPit.nextPits;
+                    currentPit = currentPit.next;
                 } while (currentPit != head);
             }
         }
@@ -68,9 +70,21 @@ public class CircularLinkedLIst {
 
         if(head!= null){
             do{
-                currentPit = currentPit.nextPits;
+                currentPit = currentPit.next;
             }while(currentPit != head);
         }
+    }
+
+    public void show()
+    {
+        Pits pits = head;
+
+        while (pits.next != head)
+        {
+            System.out.println(pits.data);
+            pits = pits.next;
+        }
+        System.out.println(pits.data);
     }
 
 
