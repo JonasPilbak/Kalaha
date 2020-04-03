@@ -72,16 +72,12 @@ public class LinkedList {
         Pits tenth = new Pits(6);
         Pits eleventh = new Pits(6);
         Pits twelfth = new Pits(6);
-
-
-
-       // Pits Current = new Pits(0);
+        // Pits Current = new Pits(0);
 
         first.next = second;
         second.next = third;
         third.next = fourth;
         fourth.next = fifth;
-
         fifth.next = sixth;
         sixth.next = seventh;
         seventh.next = eight;
@@ -92,54 +88,6 @@ public class LinkedList {
         twelfth.next = fifth;
         last = twelfth;
 
-
-
-        first.data--;
-        second.data = second.data + 1;
-        System.out.println(first.data);
-        System.out.println(second.data);
-
-
-        for (int i = 0; i < first.data; i++) {
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-/*
-
-            System.out.println(first.data);
-
-            Pits second = first.next;
-            System.out.println(second.data);
-            Pits third = second.next;
-            System.out.println(third.data);
-            Pits fourth = third.next;
-            System.out.println(fourth.data);
-            Pits fifth = fourth.next;
-            System.out.println(fifth.data);
-
-                        first.next.data++;
-            first.data--;
-            System.out.println(second.data);
-            System.out.println(third.data);
-            System.out.println(fourth.data);
-            System.out.println(fifth.data);
-
-        if (first.data == 0 && first.next != last.next )
-        {
-
-        }
-
- */
     }
 
 
