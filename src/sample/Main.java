@@ -19,6 +19,7 @@ public class Main extends Application {
             c.startGame();
         } catch (IOException e) {
             e.printStackTrace();
+
         }
     }
 
@@ -26,4 +27,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }
