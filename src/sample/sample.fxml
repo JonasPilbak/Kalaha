@@ -60,20 +60,21 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <TextField fx:id="tfPit7" layoutX="821.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit8" layoutX="688.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit9" layoutX="552.0" layoutY="136.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit10" layoutX="420.0" layoutY="136.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit11" layoutX="292.0" layoutY="138.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit4" layoutX="558.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit6" layoutX="826.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfHouseP1" layoutX="897.0" layoutY="239.0" prefHeight="84.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfHouseP2" layoutX="73.0" layoutY="233.0" prefHeight="84.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit12" layoutX="158.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit5" layoutX="694.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit3" layoutX="425.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit2" layoutX="297.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
-            <TextField fx:id="tfPit1" layoutX="163.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" styleClass="tfPit" />
+            <TextField fx:id="tfPit7" layoutX="821.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit8" layoutX="688.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit9" layoutX="552.0" layoutY="136.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit10" layoutX="420.0" layoutY="136.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit11" layoutX="292.0" layoutY="138.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit4" layoutX="558.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit6" layoutX="826.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfHouseP1" layoutX="897.0" layoutY="265.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfHouseP2" layoutX="73.0" layoutY="265.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit12" layoutX="158.0" layoutY="139.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit5" layoutX="694.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit3" layoutX="425.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit2" layoutX="297.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <TextField fx:id="tfPit1" layoutX="163.0" layoutY="391.0" prefHeight="12.0" prefWidth="45.0" />
+            <Button fx:id="startGameButton" layoutX="29.0" layoutY="52.0" mnemonicParsing="false" onAction="#buttonNames" styleClass="otherButtons" stylesheets="@../myCss.css" text="START GAME" />
          </children>
       </AnchorPane>
    </children>

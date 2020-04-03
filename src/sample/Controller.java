@@ -53,15 +53,6 @@ public class Controller {
         });
     }
 
-
-    /**
-     * Created the LinkedList
-     */
-    @FXML
-   // public void test() {
-        Pits pit = new Pits(6);
-  //  }
-
         public void test ()
         {
             Pits head = new Pits(6);
@@ -90,7 +81,6 @@ public class Controller {
             pit10.nextPits = pit11;
             pit11.nextPits = pit12;
             pit12.nextPits = head;
-           // head.pit12.setStyle("-fx-background-color: RED");
 
         }
 
@@ -112,6 +102,7 @@ public class Controller {
 
         @FXML
         void startGame() throws IOException {
+
             if (stage == null) {
                 Stage stage = new Stage();
                 Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -123,12 +114,13 @@ public class Controller {
             } else {
                 stage.show();
             }
-
         }
+
 
         public void restart (ActionEvent actionEvent) throws IOException {
             cleanup();
             // startGame();
+
 
         }
 }

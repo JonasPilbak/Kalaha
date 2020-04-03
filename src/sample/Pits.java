@@ -97,37 +97,8 @@ public class Pits {
 
         this.value = value;
     }
-    public void buttonNames()
-    {
-
-        pit2.setText("" + value);
-        pit3.setText("" + value);
-        pit4.setText("" + value);
-        pit5.setText("" + value);
-        pit6.setText("" + value);
-        pit7.setText("" + value);
-        pit8.setText("" + value);
-        pit9.setText("" + value);
-        pit10.setText("" + value);
-        pit11.setText("" + value);
-        pit12.setText("" + value);
-    }
-
-    void test() {
-
-        pit3.setText("" + value);
-        pit4.setText("" + value);
-        pit5.setText("" + value);
-        pit6.setText("" + value);
-        pit7.setText("" + value);
-        pit8.setText("" + value);
-        pit9.setText("" + value);
-        pit10.setText("" + value);
-        pit11.setText("" + value);
-        pit12.setText("" + value);
 
 
-    }
 
     void playerTurn(){
 
